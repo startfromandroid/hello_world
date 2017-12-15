@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/wrapper_states"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ucrop_height_wrapper_states"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ucrop_color_widget_active"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:id="@+id/state_cancle"
+            android:visibility="gone"
+            style="@style/ucrop_WrapperRotateButton">
+            <TextView
+                android:layout_width="wrap_content"
+                style="@style/ucrop_ImageViewWidgetIcon"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ucrop_ic_cross"
+                android:text="取消"/>
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/state_reset"
+            style="@style/ucrop_WrapperRotateButton">
+            <TextView
+                android:layout_width="wrap_content"
+                style="@style/ucrop_ImageViewWidgetIcon"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ucrop_ic_reset"
+                android:text="还原"/>
+
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/state_rotate"
+            style="@style/ucrop_WrapperRotateButton">
+            <TextView
+                android:layout_width="wrap_content"
+                style="@style/ucrop_ImageViewWidgetIcon"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ucrop_ic_angle"
+                android:text="旋转"/>
+
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/state_done"
+            android:layout_width="50dp"
+            android:visibility="gone"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                style="@style/ucrop_ImageViewWidgetIcon"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ucrop_ic_done"
+                android:text="确定"/>
+
+        </FrameLayout>
+    </LinearLayout>
+</merge>
